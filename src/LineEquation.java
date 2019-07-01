@@ -3,19 +3,20 @@ import java.util.Scanner;
 public class LineEquation {
  public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-     int b;
-     int a;
-     int x;
+     double b;
+     double a;
+     double x;
 
      System.out.println("Enter a:");
-     a = scanner.nextInt();
+     a = scanner.nextDouble();
 
      System.out.println("Enter b:");
-     b = scanner.nextInt();
+     b = scanner.nextDouble();
 
-     x = (-b) / a;
+     x = - b / a;
 
-     System.out.println("x = " + x);
+     System.out.println("x = ");
+     System.out.println(x);
 
       }
 }
