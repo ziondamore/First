@@ -7,6 +7,8 @@ public class LineEquation {
      double a;
      double x;
 
+     System.out.println("ax + b = 0");
+
      System.out.println("Enter a:");
      a = scanner.nextDouble();
 
