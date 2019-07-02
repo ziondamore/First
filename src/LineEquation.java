@@ -9,15 +9,15 @@ public class LineEquation {
 
      System.out.println("ax + b = 0");
 
-     System.out.println("Enter a:");
+     System.out.print("Enter a: ");
      a = scanner.nextDouble();
 
-     System.out.println("Enter b:");
+     System.out.print("Enter b: ");
      b = scanner.nextDouble();
 
      x = - b / a;
 
-     System.out.println("x = ");
+     System.out.print("x = ");
      System.out.println(x);
 
       }
