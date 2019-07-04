@@ -15,10 +15,17 @@ public class LineEquation {
      System.out.print("Enter b: ");
      b = scanner.nextDouble();
 
-     x = - b / a;
-
-     System.out.print("x = ");
-     System.out.println(x);
+     if (a == 0) {
+         if (b == 0) {
+             System.out.print("x-any ");
+         } else {
+             System.out.print("not");
+         }
+     } else {
+         x = -b / a;
+         System.out.print("x = ");
+         System.out.println(x);
+     }
 
       }
 }
