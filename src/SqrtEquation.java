@@ -8,13 +8,13 @@ public class SqrtEquation {
 
         System.out.println("ax2 + bx + c = 0");
 
-        System.out.print("Enter a:");
+        System.out.print("Enter a: ");
         a = input.nextDouble();
 
-        System.out.print("Enter b:");
+        System.out.print("Enter b: ");
         b = input.nextDouble();
 
-        System.out.print("Enter c:");
+        System.out.print("Enter c: ");
         c = input.nextDouble();
 
         d = Math.pow(b,2) - (4 * a * c);
