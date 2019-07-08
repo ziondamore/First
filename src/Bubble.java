@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.SplittableRandom;
 
 public class Bubble {
     public static void main(String[] args) {
@@ -84,8 +85,20 @@ public class Bubble {
         Men[19][1] = "Stas";
         Men[19][2] = "135";
 
-        System.out.println(Arrays.deepToString(Men));
+        ///System.out.println(Arrays.deepToString(Men));
+
+        for (int i = 0; i < Men.length; i++){
+            for (int j = 0; j < Men[i].length; j++){
+                System.out.print(Men[i][j] + "\t");
+            }
+            System.out.println();
+        }
         };
 
     }
+class Men{
+    String Number;
+    String Name;
+    int IQ;
+}
 
