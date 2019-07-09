@@ -1,27 +1,30 @@
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.SplittableRandom;
+import java.util.Scanner;
+import java.util.*;
 
-class Men {
-        int Number;
-        String Name;
-        int IQ;
+
+public class Men {
+        public int Number;
+        public String Name;
+        public int IQ;
 
         public Men(int Number, String Name, int IQ) {
             this.Name = Name;
             this.Number = Number;
             this.IQ = IQ;
         }
-
         public String toString() {
             return this.Number + " " + this.Name + " " + this.IQ;
         }
-    }
-class Sort implements Comparator<Men> {
-        public int compare(Men a, Men b) {
-            return a.IQ - b.IQ;
-        }
-    }
+
+}
+//class  Sort implements Comparator<Men> {
+   //public int compare(Men a, Men b) {
+  //      return b.IQ - a.IQ;
+  //  }
+//}
 class MenBubble {
     public static void main(String[] args) {
         Men[] Arr = {
@@ -47,14 +50,17 @@ class MenBubble {
                 new Men(20, "Albert", 96),
         };
 
-        System.out.println("Unsorted");
-        for (int i = 0; i < Arr.length; i++)
-            System.out.print(Arr[i]);
+         System.out.println("\nUnsorted");
+         for (int i = 0; i < Arr.length; i++)
+            System.out.println(Arr[i]);
 
-            Arrays.sort(Arr, new Sort());
+ //        Arrays.sort(Arr, new Sort());
 
-            System.out.println("\nSorted by IQ");
-            for (int i = 0; i < Arr.length; i++)
-                System.out.println(Arr[i]);
-        }
+  //      System.out.println("\nSorted by IQ");
+  //       for (int i = 0; i < Arr.length; i++)
+   //           System.out.println(Arr[i]);
+
+
+
     }
+}
