@@ -1,33 +1,29 @@
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.SplittableRandom;
-import java.util.Scanner;
-import java.util.*;
-
 
 public class Men {
-        public int Number;
-        public String Name;
-        public int IQ;
+        public int indexNumber;
+        public String name;
+        public int iq;
 
-        public Men(int Number, String Name, int IQ) {
-            this.Name = Name;
-            this.Number = Number;
-            this.IQ = IQ;
+        public Men(int indexNumber, String name, int iq) {
+            this.name = name;
+            this.indexNumber = indexNumber;
+            this.iq = iq;
         }
         public String toString() {
-            return this.Number + " " + this.Name + " " + this.IQ;
+            return this.indexNumber + " " + this.name + " " + this.iq;
         }
 
 }
-//class  Sort implements Comparator<Men> {
-   //public int compare(Men a, Men b) {
-  //      return b.IQ - a.IQ;
-  //  }
-//}
+class  Sort implements Comparator<Men> {
+   public int compare(Men a, Men b) {
+       return b.iq - a.iq;
+   }
+}
 class MenBubble {
     public static void main(String[] args) {
-        Men[] Arr = {
+        Men[] listMen = {
                 new Men(1, "Alex", 125),
                 new Men(2, "Vlad", 121),
                 new Men(3, "Kolya", 88),
@@ -50,17 +46,17 @@ class MenBubble {
                 new Men(20, "Albert", 96),
         };
 
-         System.out.println("\nUnsorted");
-         for (int i = 0; i < Arr.length; i++)
-            System.out.println(Arr[i]);
+        System.out.println("\nUnsorted");
+        for (int i = 0; i < listMen.length; i++)
+            System.out.println(listMen[i]);
 
- //        Arrays.sort(Arr, new Sort());
-
-  //      System.out.println("\nSorted by IQ");
-  //       for (int i = 0; i < Arr.length; i++)
-   //           System.out.println(Arr[i]);
+        Arrays.sort(listMen, new Sort());
 
 
-
+        System.out.println("\nSorted by IQ: Top 10");
+        Men[] getCopy_Men = Arrays.copyOfRange(listMen, 0, 10);
+        for (Men listMen1 : getCopy_Men)
+            System.out.println(listMen1.toString() + " ");
+            System.out.println();
     }
 }
