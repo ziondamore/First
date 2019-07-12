@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class SqrtEquation {
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double a, b, c, x1, x2, d;
