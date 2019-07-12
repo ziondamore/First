@@ -1,10 +1,10 @@
 
 Homework #1. Line Equation
-Need to create algorithm for decision Line Equation type "ax + b = 0"
+Сreate algorithm for decision Line Equation type "ax + b = 0"
 Solution: LineEquation.java
 
 Homework #2. Square Equation
-Need to create algorithm for decision Square Equation type "ax2 + bx + c = 0"
+Сreate algorithm for decision Square Equation type "ax2 + bx + c = 0"
 Solution: SqrtEquation.java
 
 Homework #3. Bubble sort
