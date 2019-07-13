@@ -13,4 +13,5 @@ Homework #3. **Bubble sort**
 One girl need to decide with whom to go for dating. She has a list of pretenders and want sort them by iq. Implement a class to sort an array with bubble sort and print top 10 pretenders.
 
 Solution: [ArrayBubble.java](https://github.com/ziondamore/First/blob/master/src/ArrayBubble.java)
+
 Solution: [MenBubble.java](https://github.com/ziondamore/First/blob/master/src/MenBubble.java) (without bubble sort, but with method Comparator)
