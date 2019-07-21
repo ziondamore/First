@@ -18,3 +18,10 @@ One girl need to decide with whom to go for dating. She has a list of pretenders
 Solution: [ArrayBubble.java](https://github.com/ziondamore/First/blob/master/src/ArrayBubble.java)
 
 Solution: [MenBubble.java](https://github.com/ziondamore/First/blob/master/src/MenBubble.java) (without bubble sort, but with method Comparator)
+
+Homework #4. **Group by Name**
+
+Implement grouping of men by name without *map
+
+Solution: [GroupByName](https://github.com/ziondamore/First/blob/master/src/GroupByName.java)
+
