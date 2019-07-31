@@ -29,8 +29,8 @@ Homework #5. **Create booking methods and create some entities for booking**
 
 Implement grouping of men by name without *map
 
-Solution: [simpleBooking.CreateNewBooking]()
-Solution: [simpleBooking.Flight]()
-Solution: [simpleBooking.Passenger]()
-Solution: [simpleBooking.Ticket]()
+Solution: [simpleBooking.CreateNewBooking](https://github.com/ziondamore/First/blob/master/src/simpleBooking/CreateNewBooking.java)
+Solution: [simpleBooking.Flight](https://github.com/ziondamore/First/blob/master/src/simpleBooking/Flight.java)
+Solution: [simpleBooking.Passenger](https://github.com/ziondamore/First/blob/master/src/simpleBooking/Passenger.java)
+Solution: [simpleBooking.Ticket](https://github.com/ziondamore/First/blob/master/src/simpleBooking/Ticket.java)
 
