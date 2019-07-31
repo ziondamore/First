@@ -13,8 +13,6 @@ class Ticket {
         this.seat = seat;
     }
 
-
-
     private int getPassengerNameRecordNumber(){
         return this.hashCode();
     }

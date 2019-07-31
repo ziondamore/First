@@ -1,3 +1,5 @@
+package sorting;
+
 import java.util.ArrayList;
 
 class ArrayBubble {
@@ -26,6 +28,13 @@ class ArrayBubble {
         listMen.add(new Man(18, "Stas", 135));
         listMen.add(new Man(19, "Gosha", 79));
         listMen.add(new Man(20, "Albert", 96));
+        listMen.add(new Man(21, "Alex", 126));
+        listMen.add(new Man(22, "Vlad", 127));
+        listMen.add(new Man(23, "Kolya", 89));
+        listMen.add(new Man(24, "Tima", 134));
+        listMen.add(new Man(25, "Vova", 199));
+        listMen.add(new Man(26, "Victor", 143));
+        listMen.add(new Man(27, "Dimon", 113));
 
 
         System.out.println("\nUnsorted");
@@ -38,13 +47,13 @@ class ArrayBubble {
         }
     }
 
-    private static void printMen(ArrayList<Man> listMen) {
+    public static void printMen(ArrayList<Man> listMen) {
         for (int i = 0; i < listMen.size(); i++) {
             System.out.println(listMen.get(i));
         }
     }
 
-    private static void sortMenByIQWithBubbleSort(ArrayList<Man> source) {
+    public static void sortMenByIQWithBubbleSort(ArrayList<Man> source) {
         int length = source.size();
         boolean swapped;
         Man temporaryVariable;
@@ -53,7 +62,7 @@ class ArrayBubble {
             swapped = false;
 
             for (int j = 0; j < length - i - 1; j++) {
-                if (source.get(j).iq < source.get(j + 1).iq) {
+                if (source.get(j).getIq() < source.get(j + 1).getIq()) {
                     temporaryVariable = source.get(j);
                     source.set(j, (source.get(j +1)));
                     source.set((j + 1),temporaryVariable);

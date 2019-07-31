@@ -1,6 +1,7 @@
+package sorting;
+
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
 
 
 public class GroupByName {
@@ -41,12 +42,9 @@ public class GroupByName {
         for (Man man: newListMen) {
             namesSet.add(man.getName());
         }
-        // System.out.println(namesSet);
 
         ArrayList<String> namesList = new ArrayList<>(namesSet);
         ArrayList<HashSet<Man>> menByNamesMap = new ArrayList<>(namesSet.size());
-
-        //System.out.println(namesSet.size());
 
         for (int i = 0; i < namesSet.size(); i++) {
             menByNamesMap.add(new HashSet<>());
@@ -60,7 +58,6 @@ public class GroupByName {
         for (HashSet<Man> manList: menByNamesMap) {
             for (Man men: manList){
                 System.out.println(men.toString() + " ");
-                //System.out.println();
             }
             System.out.println();
         }
